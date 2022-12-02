@@ -8,13 +8,13 @@ let adaptive = true;
 
 console.log(typeof title);
 console.log(typeof fullPrice);
-console.log(rollback);
+console.log(typeof adaptive);
 
 console.log(screens.length);
 console.log(screenPrice);
-console.log(screens.toLowerCase());
-console.log(screens.split(", "))
+console.log(screens.toLowerCase().split(", "));
+console.log()
 console.log(fullPrice * (rollback / 100))
 
-alert("hello teacher");
-console.log("hello world");
+// alert("hello teacher");
+// console.log("hello world");
