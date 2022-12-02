@@ -13,7 +13,6 @@ console.log(typeof adaptive);
 console.log(screens.length);
 console.log(screenPrice);
 console.log(screens.toLowerCase().split(", "));
-console.log()
 console.log(fullPrice * (rollback / 100))
 
 // alert("hello teacher");
