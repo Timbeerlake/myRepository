@@ -50,8 +50,14 @@ if (fullPrice > 30000){
     
 } else if (fullPrice < 0) {
     console.log('Что-то пошло не так');
-} 
-console.log (fullPrice)
+} else if (fullPrice == 0) {
+    console.log('Скидка не предусмотрена');
+} else if (fullPrice == 15000) {
+    console.log ('Даем скидку в 5%');
+} else if (fullPrice == 30000) {
+    console.log('Даем скидку в 10%');
+}
+console.log (fullPrice);
 
 // alert("hello teacher");
 // console.log("hello world");
