@@ -30,14 +30,10 @@ let servicePrice2 = +prompt("Сколько это будет стоить ?");
 
 fullPrice = screenPrice + servicePrice1 + servicePrice2;
 
-let servicePercentPrice =  Math.ceil(fullPrice - "Откат посреднику");
+let servicePercentPrice =  Math.ceil(fullPrice - 6600);
 console.log(servicePercentPrice);
 
-// - Если fullPrice больше 30000, то “Даем скидку в 10%” 
-//   - Если fullPrice больше 15000 и меньше 30000, то сообщение “Даем скидку в 5%” 
-//   - Если fullPrice меньше 15000 и больше 0 то в консоль вывести сообщение “Скидка не предусмотрена” 
-//   - Если отрицательное значение то вывести “Что то пошло не так” 
-//   - Учесть варианты 0, 15000 и 30000(к какому уровню не важно)
+
 
 if (fullPrice > 30000){
     console.log('Даем скидку 10%');
