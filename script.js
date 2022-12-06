@@ -35,7 +35,7 @@ function getFullPrice(screenPrice, allServicePrices) {
   return screenPrice + allServicePrices;
 }
 
-function getTitle(str) {
+function getTitle(title) {
   return title[0].toUpperCase() + title.substring(1).toLowerCase();
 }
 
