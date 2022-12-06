@@ -8,8 +8,6 @@ let service1 = prompt("Какой дополнительный тип услуг
 let servicePrice1 = +prompt("Сколько это будет стоить ?");
 let service2 = prompt("Какой дополнительный тип услуги нужен ?");
 let servicePrice2 = +prompt("Сколько это будет стоить ?");
-let fullPrice = getFullPrice;
-let servicePercentPrice = getServicePercentPrices;
 
 const showTypeOf = function (variable) {
   console.log(variable, typeof variable);
@@ -31,19 +29,22 @@ let getAllServicePrices = function (servicePrice1, servicePrice2) {
   return servicePrice1 + servicePrice2;
 };
 
-let allServicePrices = getAllServicePrices;
+let allServicePrices = getAllServicePrices(servicePrice1, servicePrice2);
 
 function getFullPrice(screenPrice, allServicePrices) {
   return screenPrice + allServicePrices;
 }
 
 function getTitle(str) {
-      return title[0].toUpperCase() + title.substring(1).toLowerCase();}
-    
+  return title[0].toUpperCase() + title.substring(1).toLowerCase();
+}
 
 function getServicePercentPrices(fullPrice, rollback) {
-  return fullPrice - rollback;
+  return fullPrice - fullPrice * (rollback / 100);
 }
+
+let fullPrice = getFullPrice(screenPrice, allServicePrices);
+let servicePercentPrices = getServicePercentPrices(fullPrice, rollback);
 
 showTypeOf(title);
 showTypeOf(screenPrice);
@@ -52,9 +53,8 @@ showTypeOf(adaptive);
 console.log(getRollbackMessage(fullPrice));
 console.log(screens);
 console.log(getTitle(title));
-console.log(showTypeOf(title));
+showTypeOf(title);
 console.log(getServicePercentPrices(fullPrice, rollback));
-
 
 // alert("hello teacher");
 // console.log("hello world");
