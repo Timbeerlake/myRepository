@@ -1,4 +1,4 @@
-"use strict";
+
 let rollback = 22;
 let title = prompt("Как называется ваш проект ?");
 let screens = prompt("Какие типы экранов нужно разработать ?");
@@ -24,7 +24,7 @@ if (fullPrice > 30000){
     console.log('Скидка не предусмотрена');
     
 } else if (fullPrice < 0) {
-    console.log('Что-то пошло не так');
+    console.log('Что-то пошло не так');}
     console.log (fullPrice);
     console.log("Стоимость верстки экранов" + " " + screenPrice + " " + "рублей");
     console.log("Стоимость разработки сайта" + " " + fullPrice + " " + "рублей");
