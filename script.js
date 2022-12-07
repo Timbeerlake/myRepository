@@ -19,11 +19,11 @@ const isNumber = function (num) {
 const asking = function () {
     title = prompt("Как называется ваш проект ?", "калькулятор верстки");
     screens = prompt("Какие типы экранов нужно разработать ?", "простые, сложные");
-    screenPrice = prompt("Сколько будет стоить данная работа ?");
+    screenPrice = +prompt("Сколько будет стоить данная работа ?");
     adaptive = confirm("Нужен ли адаптив на сайте ?");
  
     do {
-      screenPrice = prompt("Сколько будет стоить данная работа ?");
+      screenPrice = +prompt("Сколько будет стоить данная работа ?");
     } while (!isNumber(screenPrice)); 
 
 }
@@ -42,7 +42,7 @@ let getAllServicePrices = function () {
       }  
       let ask = +prompt("Сколько это будет стоить")
       while(!isNumber(ask)){
-        ask = prompt("Сколько это будет стоить")}
+        ask = +prompt("Сколько это будет стоить")}
       sum += ask }
       return sum
     };
@@ -96,8 +96,8 @@ console.log(typeof adaptive);
 console.log(screens.length)
 console.log(servicePercentPrices)
 
-console.log("Стоимость верстки экранов" + screenPrice + "рубли")
-console.log("Стоимость разработки сайта" + fullPrice + "рубли")
+console.log("Стоимость верстки экранов" + " " + screenPrice + " " + "рубли")
+console.log("Стоимость разработки сайта" + " " + fullPrice + " " + "рубли")
 
 // alert("hello teacher");
 // console.log("hello world");
