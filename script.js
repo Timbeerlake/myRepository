@@ -10,6 +10,17 @@ let servicePercentPrices;
 let service1 ;
 let service2 ;
 
+// const num = function () {
+//   let a;
+
+//   do {
+//     a = +prompt("введите число ");
+//   } while (!a);
+//   return a;
+// };
+
+// num();
+
 
 
 const isNumber = function (num) {
@@ -25,7 +36,7 @@ const asking = function () {
     do {
       screenPrice = +prompt("Сколько будет стоить данная работа ?");
     } while (!isNumber(screenPrice)); 
-
+  
 }
 
 
@@ -41,7 +52,7 @@ let getAllServicePrices = function () {
         service2 = prompt("Какой дополнительный тип услуги нужен ?");
       }  
       let ask = +prompt("Сколько это будет стоить")
-      while(!isNumber(ask)){
+      while(!ask){
         ask = +prompt("Сколько это будет стоить")}
       sum += ask }
       return sum
