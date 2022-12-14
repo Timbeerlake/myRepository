@@ -1,14 +1,18 @@
 "use strict";
-// let rollback = 22;
-// let title ;
-// let screens ;
-// let screenPrice ;
-// let adaptive;
-// let allServicePrices;
-// let fullPrice;
-// let servicePercentPrices;
-// let service1 ;
-// let service2 ;
+
+
+const titleText = document.getElementsByTagName("h1");
+const buttons = document.getElementsByClassName("handler_btn");
+const plus = document.querySelector(".screen-btn");
+const percent1 = document.querySelectorAll(".other-items, .percent");
+const number1 = document.querySelectorAll(".other-items, .number");
+const inputTypeRange = document.querySelector(".main-controls__item rollback > .main-controls__range > input")
+const span1 = document.querySelector("main-controls__item rollback > .main-controls__range > span");
+const totalInput = document.getElementsByClassName("total-input");
+let screen = document.querySelectorAll(".screen")
+
+
+
 let isNumber = function (num) {
   return !isNaN(parseFloat(num)) && isFinite(num);
 };
