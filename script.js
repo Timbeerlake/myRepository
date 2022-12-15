@@ -7,13 +7,14 @@ const buttonStop = document.getElementsByClassName("handler_btn");
 const plus = document.querySelector(".screen-btn");
 const percent1 = document.querySelectorAll(".other-items .percent");
 const number1 = document.querySelectorAll(".other-items .number");
-const inputTypeRange = document.querySelector(" .main-controls__item rollback > .main-controls__range > input")
-const span1 = document.querySelector(".main-controls__item rollback >.main-controls__range >span");
+const inputTypeRange = document.querySelector(" .main-controls__item .rollback > .main-controls__range > input")
+const span1 = document.querySelector(".main-controls__item .rollback >.main-controls__range >span");
 const totalInput = document.getElementsByClassName("total-input");
 let screen = document.querySelectorAll(".screen")
 
 console.log(titleText);
-console.log(buttons);
+console.log(buttonStart);
+console.log(buttonStop);
 console.log(plus);
 console.log(percent1);
 console.log(number1);
