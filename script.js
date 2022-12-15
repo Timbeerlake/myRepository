@@ -2,8 +2,8 @@
 
 
 const titleText = document.getElementsByTagName("h1");
-const buttonStart = document.getElementsByClassName("handler_btn");
-const buttonStop = document.getElementsByClassName("handler_btn");
+const buttonStart = document.getElementsByClassName("handler_btn")[0];
+const buttonStop = document.getElementsByClassName("handler_btn")[1];
 const plus = document.querySelector(".screen-btn");
 const percent1 = document.querySelectorAll(".other-items .percent");
 const number1 = document.querySelectorAll(".other-items .number");
